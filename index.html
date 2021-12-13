@@ -26,20 +26,51 @@
              header{
                  height: 47px;
              }
+             aside .accordion button{
+               border-bottom: 1px solid #492964;
+             }
+             .active *{
+               color:#ffb900 !important;
+               border-left:3px solid #ffb900;
+             }
+             input:focus{
+                box-shadow:none !important;
+             }
            </style>
     </head>
     <body>
            <div class="container-fluid s_cont_fluid s_tbdr p-0">
                <header>
                     <div class="row m-0 h-100">
-                        <div class="col-2 s_tbdr p-0">A</div>
-                        <div class="col-10 s_tbdr p-0">B</div>
+                        <div class="col-2 s_tbdr p-0">
+                          <img src="img/04__Logo option.png"> Neuro Lab
+                          <h2> Neuro Lab</h2>
+                        </div>
+                        <div class="col-10 s_tbdr p-0">
+                          <form class="float-start">
+                            <input type="search" class="border-0 mt-2 ms-5 form-control" placeholder="search or help">
+                          </form>
+                          <ul class="nav float-end">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
                     </div>
                </header>
                <div class="s_main row m-0 h-100">
                 <aside class="col-2 s_purple s_tbdr p-0">
                     <div class="accordion rounded-0" id="accordionExample">
-                        <div class="accordion-item rounded-0 border-0">
+                        <div class="accordion-item active rounded-0 border-0">
                           <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button s_ll_purple rounded-0 s_light_purple" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               Client dashboard
